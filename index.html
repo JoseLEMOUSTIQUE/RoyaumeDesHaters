@@ -3,71 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Royaume du Hate Bienveillant</title>
+    <title>Présentation du Royaume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", Times, serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
         }
         header {
-            background-color: #8B0000; /* Sangue rouge */
-            color: #FFD700; /* Or */
-            padding: 1rem 0;
+            background: linear-gradient(135deg, #660000, #1a1a1a);
+            color: #d4af37;
+            padding: 1.5rem 0;
             text-align: center;
-            border-bottom: 5px solid #000; /* Noir */
+            border-bottom: 3px solid #d4af37;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0 0.2rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        header img {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            height: 80px;
+            width: auto;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #660000;
             padding: 0.5rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         nav a {
-            color: #FFD700; /* Or */
+            color: #d4af37;
             text-decoration: none;
-            margin: 0 1rem;
+            margin: 0 1.5rem;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 2rem auto;
-            padding: 1rem;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            background-color: #292929;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+        .container h2 {
+            color: #d4af37;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .container p {
+            margin-bottom: 1rem;
+        }
+        .container img {
+            display: block;
+            margin: 1.5rem auto;
+            max-width: 100%;
+            height: auto;
         }
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #8B0000; /* Sangue rouge */
-            color: #FFD700; /* Or */
+            background: linear-gradient(135deg, #1a1a1a, #660000);
+            color: #d4af37;
+            border-top: 3px solid #d4af37;
             position: fixed;
             bottom: 0;
             width: 100%;
-            border-top: 5px solid #000; /* Noir */
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Logo du Royaume">
         <h1>Le Royaume du Hate Bienveillant</h1>
         <p>Bienvenue dans le site officiel du Royaume !</p>
     </header>
     <nav>
-        <a href="Constitution.html">Constitution</a>
-        <a href="Decrets.html">Journal des Décrets</a>
-        <a href="Gouvernement.html">Gouvernement</a>
-        <a href="#contact">Contact</a>
+        <a href="constitution.html">Constitution</a>
+        <a href="decrets.html">Journal des Décrets</a>
+        <a href="gouvernement.html">Gouvernement</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <main class="container">
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Vous avez des questions ou des propositions ? Contactez-nous sur Discord ou via les canaux officiels.</p>
-        </section>
+        <h2>Présentation du Royaume</h2>
+        <p>Le Royaume du Hate Bienveillant est un espace où règnent l'équilibre, la justice et une bienveillance assumée. 
+        Fondé sur les principes d'une monarchie éclairée, le Royaume se distingue par son dévouement envers ses sujets et ses valeurs nobles.</p>
+
+        <p>Notre emblème, une épée entrelacée d'une rose, symbolise la force et la délicatesse qui cohabitent harmonieusement dans notre vision du pouvoir. 
+        Chaque décision, chaque décret est pris dans le respect des traditions tout en regardant vers l'avenir.</p>
+
+        <img src="emblem_transparent.png" alt="Emblème du Royaume">
+
+        <p>Explorez nos pages pour découvrir les fondements de notre Constitution, les décrets qui façonnent notre société et la composition de notre Gouvernement.
+        Nous vous invitons également à nous contacter pour toute question ou proposition visant à enrichir la vie de notre Royaume.</p>
     </main>
     <footer>
         <p>&copy; 2024 Royaume du Hate Bienveillant. Tous droits réservés.</p>
