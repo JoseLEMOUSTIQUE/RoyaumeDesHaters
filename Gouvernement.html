@@ -3,70 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gouvernement du Royaume</title>
+    <title>Le Royaume du Hate Bienveillant</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", Times, serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
+            background: linear-gradient(135deg, #660000, #1a1a1a);
+            color: #d4af37;
+            padding: 1.5rem 0;
             text-align: center;
+            border-bottom: 3px solid #d4af37;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #660000;
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 2rem auto;
-            padding: 1rem;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            padding: 1.5rem;
+            background-color: #292929;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
         }
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-            margin-top: 2rem;
+            background: linear-gradient(135deg, #1a1a1a, #660000);
+            color: #d4af37;
+            border-top: 3px solid #d4af37;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Composition du Gouvernement</h1>
+        <h1>Le Royaume du Hate Bienveillant</h1>
+        <p>Bienvenue dans le site officiel du Royaume !</p>
     </header>
+    <nav>
+        <a href="#constitution">Constitution</a>
+        <a href="#decrets">Journal des Décrets</a>
+        <a href="#gouvernement">Gouvernement</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <main class="container">
-        <h2>La Reine</h2>
-        <p>Sa Majesté [Nom de la Reine] : Chef suprême du Royaume.</p>
-
-        <h2>Ministres</h2>
-        <ul>
-            <li><strong>Premier Ministre :</strong> [Nom du Premier Ministre]</li>
-            <li><strong>Ministre de la Justice :</strong> [Nom du Ministre]</li>
-            <li><strong>Ministre des Finances :</strong> [Nom du Ministre]</li>
-            <li><strong>Ministre de la Culture :</strong> [Nom du Ministre]</li>
-            <li><strong>Ministre des Relations Extérieures :</strong> [Nom du Ministre]</li>
-        </ul>
-
-        <h2>Conseil Constitutionnel</h2>
-        <p>Le Conseil Constitutionnel est composé de :</p>
-        <ul>
-            <li>[Nom du membre 1]</li>
-            <li>[Nom du membre 2]</li>
-            <li>[Nom du membre 3]</li>
-        </ul>
-
-        <p>Pour consulter d'autres sections, retournez à la <a href="index.html">page d'accueil</a>.</p>
+        <section id="constitution">
+            <h2>Constitution</h2>
+            <p>La Constitution est le texte fondamental qui régit le fonctionnement du Royaume. Retrouvez-la <a href="constitution.html">ici</a>.</p>
+        </section>
+        <section id="decrets">
+            <h2>Journal des Décrets</h2>
+            <p>Le journal officiel recense toutes les lois et décrets validés par le Conseil Constitutionnel. Consultez-le <a href="decrets.html">ici</a>.</p>
+        </section>
+        <section id="gouvernement">
+            <h2>Gouvernement</h2>
+            <p>Le Gouvernement du Royaume est composé des ministres nommés par la Reine. Découvrez sa composition <a href="gouvernement.html">ici</a>.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous avez des questions ou des propositions ? Contactez-nous sur Discord ou via les canaux officiels.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Royaume du Hate Bienveillant. Tous droits réservés.</p>
