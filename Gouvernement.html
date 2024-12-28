@@ -58,22 +58,39 @@
             background-color: #292929;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             border-radius: 8px;
-            margin-bottom: 7%;
         }
-        .container h2 {
+        section {
+            margin-bottom: 4rem;
+        }
+        section h2 {
             color: #d4af37;
             border-bottom: 2px solid #d4af37;
             padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
         }
-        .container p {
-            margin-bottom: 1rem;
+        .category {
+            background-color: #292929;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
-        .container img {
-            display: block;
-            margin: 1.5rem auto;
-            max-width: 100%;
-            height: 20vh;
+        .member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 1.5rem;
+            border: 2px solid #d4af37;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        .member span {
+            color: #f5f5f5;
+            font-size: 1.2rem;
         }
         footer {
             text-align: center;
@@ -104,22 +121,51 @@
         <a href="Gouvernement.html">Gouvernement</a>
         <a href="Contact.html">Contact</a>
     </nav>
-    <main class="container">
-        <section id="constitution">
-            <h2>Constitution</h2>
-            <p>La Constitution est le texte fondamental qui régit le fonctionnement du Royaume. Retrouvez-la <a href="constitution.html">ici</a>.</p>
+    <main>
+        <section>
+            <h2>Reine</h2>
+            <div class="category">
+                <div class="member">
+                    <img src="reine.jpg" alt="Reine">
+                    <span>Sa Majesté, la Reine Élisabeth IV</span>
+                </div>
+            </div>
         </section>
-        <section id="decrets">
-            <h2>Journal des Décrets</h2>
-            <p>Le journal officiel recense toutes les lois et décrets validés par le Conseil Constitutionnel. Consultez-le <a href="decrets.html">ici</a>.</p>
+
+        <section>
+            <h2>Conseil Constitutionnel</h2>
+            <div class="category">
+                <div class="member">
+                    <img src="membre1.jpg" alt="Membre Conseil">
+                    <span>Jean de la Couronne</span>
+                </div>
+                <div class="member">
+                    <img src="membre2.jpg" alt="Membre Conseil">
+                    <span>Marie des Lys</span>
+                </div>
+                <div class="member">
+                    <img src="membre3.jpg" alt="Membre Conseil">
+                    <span>Louis le Sage</span>
+                </div>
+            </div>
         </section>
-        <section id="gouvernement">
-            <h2>Gouvernement</h2>
-            <p>Le Gouvernement du Royaume est composé des ministres nommés par la Reine. Découvrez sa composition <a href="gouvernement.html">ici</a>.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Vous avez des questions ou des propositions ? Contactez-nous sur Discord ou via les canaux officiels.</p>
+
+        <section>
+            <h2>Membres du Gouvernement</h2>
+            <div class="category">
+                <div class="member">
+                    <img src="ministre1.jpg" alt="Ministre">
+                    <span>Alexandre du Port - Ministre de la Marine</span>
+                </div>
+                <div class="member">
+                    <img src="ministre2.jpg" alt="Ministre">
+                    <span>Claire des Champs - Ministre de l'Agriculture</span>
+                </div>
+                <div class="member">
+                    <img src="ministre3.jpg" alt="Ministre">
+                    <span>Édouard le Juste - Ministre de la Justice</span>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
