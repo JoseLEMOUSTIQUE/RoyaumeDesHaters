@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Le Royaume du Hate Bienveillant</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(135deg, #660000, #1a1a1a);
+            color: #d4af37;
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 3px solid #d4af37;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0 0.2rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        header img {
+            position: absolute;
+            top: 25%;
+            left: 5%;
+            height: 50%;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #660000;
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 80%;
+            margin: 3% auto;
+            padding: 2%;
+            background-color: #292929;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            margin-bottom: 7%;
+        }
+        .container h2 {
+            color: #d4af37;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .container label {
+            margin-bottom: 0.5rem;
+            color: #d4af37;
+        }
+        .container input, .container textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #d4af37;
+            border-radius: 4px;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+        .container input[type="submit"] {
+            background-color: #660000;
+            color: #d4af37;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .container input[type="submit"]:hover {
+            background-color: #d4af37;
+            color: #660000;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: linear-gradient(135deg, #1a1a1a, #660000);
+            color: #d4af37;
+            border-top: 3px solid #d4af37;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo du Royaume">
+        <h1>Le Royaume du Hate Bienveillant</h1>
+        <p>Bienvenue dans le site officiel du Royaume !</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="Constitution.html">Constitution</a>
+        <a href="Decrets.html">Journal des Décrets</a>
+        <a href="Gouvernement.html">Gouvernement</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+    <main class="container">
+        <h2>Contactez-nous</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Royaume du Hate Bienveillant. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
